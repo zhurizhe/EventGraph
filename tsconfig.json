@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "esnext",                   // 编译到 ES6+ 版本
+      "module": "esnext",                   // 使用 ES 模块
+      "moduleResolution": "node",           // 模块解析策略
+      "strict": true,                       // 启用所有严格类型检查选项
+      "esModuleInterop": true,              // 允许默认导入非 ES 模块
+      "skipLibCheck": true,                 // 跳过库文件的类型检查
+      "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
+      "declaration": true,                  // 生成 `.d.ts` 声明文件
+      "declarationMap": true,               // 生成声明文件的映射文件
+      "sourceMap": true,                    // 生成源映射文件
+      "outDir": "./dist",                   // 编译输出目录
+      "baseUrl": ".",                       // 基础目录
+      "paths": {
+        "graphmaptime": ["node_modules/graphmaptime"] // 引用的类型库路径
+      }
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }
+  
